@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com</id>
     <title>SmallPig的博客</title>
-    <updated>2020-12-06T06:25:50.163Z</updated>
+    <updated>2020-12-06T06:42:30.972Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com"/>
     <link rel="self" href="https://github.com/atom.xml"/>
@@ -10,6 +10,75 @@
     <logo>https://github.com/images/avatar.png</logo>
     <icon>https://github.com/favicon.ico</icon>
     <rights>All rights reserved 2020, SmallPig的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Ubuntu20.04安装MySQL8.0]]></title>
+        <id>https://github.com/post/ubuntu2004-an-zhuang-mysql80/</id>
+        <link href="https://github.com/post/ubuntu2004-an-zhuang-mysql80/">
+        </link>
+        <updated>2020-12-06T06:26:06.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="安装mysql80">安装MySQL8.0</h3>
+<p><code>sudo apt-get install mysql-server</code></p>
+<h3 id="执行安装脚本">执行安装脚本</h3>
+<p><code>sudo mysql_secure_installation</code></p>
+<pre><code>VALIDATE PASSWORD PLUGIN can be used to test passwords...
+Press y|Y for Yes, any other key for No: N (我的选项)
+
+Please set the password for root here...
+New password: (输入密码)
+Re-enter new password: (重复输入)
+
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them...
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : Y (我的选项)
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network...
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N (我的选项)
+
+By default, MySQL comes with a database named 'test' that
+anyone can access...
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : Y(我的选项)
+
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我的选项)
+</code></pre>
+<h3 id="配置远程访问">配置远程访问</h3>
+<p><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></p>
+<p>注释掉</p>
+<ul>
+<li><code>bind-address = 127.0.0.1</code></li>
+<li><code>imysqlx-bind-address = 127.0.0.1</code></li>
+</ul>
+<h3 id="配置远程账户">配置远程账户</h3>
+<ul>
+<li>
+<p>应先创建新用户<br>
+<code>create user 'root'@'%' identified by '密码';</code></p>
+</li>
+<li>
+<p>执行授权<br>
+<code>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';</code></p>
+</li>
+<li>
+<p>刷新<br>
+<code>flush privileges;</code></p>
+</li>
+<li>
+<p>授权远程<br>
+<code>ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '密码';</code></p>
+</li>
+<li>
+<p>刷新<br>
+<code>flush privileges;</code></p>
+</li>
+</ul>
+<h3 id="重启mysql服务">重启mysql服务</h3>
+<p><code>sudo systemctl restart mysql</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://github.com/post/hello-gridea/</id>
