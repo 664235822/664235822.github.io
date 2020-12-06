@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com</id>
-    <title>SmallPig的博客</title>
-    <updated>2020-12-06T07:10:00.144Z</updated>
+    <title>SmallPig的个人博客</title>
+    <updated>2020-12-06T07:10:31.845Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com"/>
     <link rel="self" href="https://github.com/atom.xml"/>
     <subtitle>使用Github Pages搭建的个人博客</subtitle>
     <logo>https://github.com/images/avatar.png</logo>
     <icon>https://github.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, SmallPig的博客</rights>
+    <rights>All rights reserved 2020, SmallPig的个人博客</rights>
     <entry>
         <title type="html"><![CDATA[Ubuntu20.04安装Tomcat9]]></title>
         <id>https://github.com/post/ubuntu2004-an-zhuang-tomcat9/</id>
