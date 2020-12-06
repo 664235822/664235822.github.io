@@ -2,20 +2,23 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ubuntu20.04安装MySQL8.0 | SmallPig的博客</title>
+<title>Ubuntu20.04安装Tomcat9 | SmallPig的博客</title>
 <link rel="shortcut icon" href="https://github.com/favicon.ico?v=1607238191315">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://github.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Ubuntu20.04安装MySQL8.0 | SmallPig的博客 - Atom Feed" href="https://github.com/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Ubuntu20.04安装Tomcat9 | SmallPig的博客 - Atom Feed" href="https://github.com/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="安装MySQL8.0
-sudo apt-get install mysql-server
-执行安装脚本
-sudo mysql_secure_installation
-VALIDATE PASSWORD PLUGIN can be used ..." />
+    <meta name="description" content="安装JDK
+sudo apt-get install default-jdk
+配置环境变量
+
+sudo vim /etc/environment
+粘贴
+
+JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjd..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -78,81 +81,52 @@ VALIDATE PASSWORD PLUGIN can be used ..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Ubuntu20.04安装MySQL8.0
+              Ubuntu20.04安装Tomcat9
             </h2>
             <div class="post-info">
               <span>
                 2020-12-06
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h3 id="安装mysql80">安装MySQL8.0</h3>
-<p><code>sudo apt-get install mysql-server</code></p>
-<h3 id="执行安装脚本">执行安装脚本</h3>
-<p><code>sudo mysql_secure_installation</code></p>
-<pre><code>VALIDATE PASSWORD PLUGIN can be used to test passwords...
-Press y|Y for Yes, any other key for No: N (我的选项)
-
-Please set the password for root here...
-New password: (输入密码)
-Re-enter new password: (重复输入)
-
-By default, a MySQL installation has an anonymous user,
-allowing anyone to log into MySQL without having to have
-a user account created for them...
-Remove anonymous users? (Press y|Y for Yes, any other key for No) : Y (我的选项)
-
-Normally, root should only be allowed to connect from
-'localhost'. This ensures that someone cannot guess at
-the root password from the network...
-Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N (我的选项)
-
-By default, MySQL comes with a database named 'test' that
-anyone can access...
-Remove test database and access to it? (Press y|Y for Yes, any other key for No) : Y(我的选项)
-
-Reloading the privilege tables will ensure that all changes
-made so far will take effect immediately.
-Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我的选项)
+                <h3 id="安装jdk">安装JDK</h3>
+<p><code>sudo apt-get install default-jdk</code></p>
+<h3 id="配置环境变量">配置环境变量</h3>
+<ul>
+<li><code>sudo vim /etc/environment</code><br>
+粘贴</li>
+</ul>
+<pre><code>JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjdk-amd64&quot;
 </code></pre>
-<h3 id="配置远程访问">配置远程访问</h3>
-<p><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></p>
-<p>注释掉</p>
 <ul>
-<li><code>bind-address = 127.0.0.1</code></li>
-<li><code>imysqlx-bind-address = 127.0.0.1</code></li>
+<li><code>sudo vim ~/.bashrc</code><br>
+粘贴</li>
 </ul>
-<h3 id="配置远程账户">配置远程账户</h3>
+<pre><code>export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+</code></pre>
+<ul>
+<li><code>source ~/.bashrc</code></li>
+</ul>
+<h3 id="安装tomcat9">安装Tomcat9</h3>
+<p><code>sudo apt-get install tomcat9</code></p>
+<h3 id="已完成">已完成</h3>
 <ul>
 <li>
-<p>应先创建新用户<br>
-<code>create user 'root'@'%' identified by '密码';</code></p>
+<p>Tomcat9二进制文件目录<br>
+<code>/usr/share/tomcat9</code></p>
 </li>
 <li>
-<p>执行授权<br>
-<code>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';</code></p>
-</li>
-<li>
-<p>刷新<br>
-<code>flush privileges;</code></p>
-</li>
-<li>
-<p>授权远程<br>
-<code>ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '密码';</code></p>
-</li>
-<li>
-<p>刷新<br>
-<code>flush privileges;</code></p>
+<p>Tomcat9资源文件目录<br>
+<code>/var/lib/tomcat9</code></p>
 </li>
 </ul>
-<h3 id="重启mysql服务">重启mysql服务</h3>
-<p><code>sudo systemctl restart mysql</code></p>
 
               </div>
               <div class="toc-container">
@@ -161,11 +135,10 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我�
 <ul>
 <li>
 <ul>
-<li><a href="#%E5%AE%89%E8%A3%85mysql80">安装MySQL8.0</a></li>
-<li><a href="#%E6%89%A7%E8%A1%8C%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">执行安装脚本</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE">配置远程访问</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE%E8%BF%9C%E7%A8%8B%E8%B4%A6%E6%88%B7">配置远程账户</a></li>
-<li><a href="#%E9%87%8D%E5%90%AFmysql%E6%9C%8D%E5%8A%A1">重启mysql服务</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85jdk">安装JDK</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">配置环境变量</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85tomcat9">安装Tomcat9</a></li>
+<li><a href="#%E5%B7%B2%E5%AE%8C%E6%88%90">已完成</a></li>
 </ul>
 </li>
 </ul>
@@ -180,9 +153,9 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我�
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://github.com/post/hello-gridea/">
+            <a href="https://github.com/post/ubuntu2004-an-zhuang-mysql80/">
               <h3 class="post-title">
-                Hello Gridea
+                Ubuntu20.04安装MySQL8.0
               </h3>
             </a>
           </div>
