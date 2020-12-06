@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://664235822.github.io</id>
     <title>SmallPig的个人博客</title>
-    <updated>2020-12-06T07:25:46.599Z</updated>
+    <updated>2020-12-06T07:42:14.195Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://664235822.github.io"/>
     <link rel="self" href="https://664235822.github.io/atom.xml"/>
@@ -16,29 +16,11 @@
         <link href="https://664235822.github.io/post/ubuntu2004-an-zhuang-tomcat9/">
         </link>
         <updated>2020-12-06T06:49:15.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="安装jdk">安装JDK</h3>
-<p><code>sudo apt-get install default-jdk</code></p>
-<h3 id="配置环境变量">配置环境变量</h3>
-<ul>
-<li><code>sudo vim /etc/environment</code><br>
-粘贴</li>
-</ul>
-<pre><code>JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjdk-amd64&quot;
-</code></pre>
-<ul>
-<li><code>sudo vim ~/.bashrc</code><br>
-粘贴</li>
-</ul>
-<pre><code>export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export PATH=$JAVA_HOME/bin:$PATH
-</code></pre>
-<ul>
-<li><code>source ~/.bashrc</code></li>
-</ul>
-<h3 id="安装tomcat9">安装Tomcat9</h3>
-<p><code>sudo apt-get install tomcat9</code></p>
-<h3 id="已完成">已完成</h3>
-<ul>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>安装Tomcat9<br>
+<code>sudo apt-get install tomcat9</code></p>
+</li>
 <li>
 <p>Tomcat9二进制文件目录<br>
 <code>/usr/share/tomcat9</code></p>
@@ -93,6 +75,7 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我�
 <li><code>imysqlx-bind-address = 127.0.0.1</code></li>
 </ul>
 <h3 id="配置远程账户">配置远程账户</h3>
+<p><code>sudo mysql -uroot -p</code></p>
 <ul>
 <li>
 <p>应先创建新用户<br>

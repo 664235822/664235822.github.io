@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://664235822.github.io/favicon.ico?v=1607239544951">
+<link rel="shortcut icon" href="https://664235822.github.io/favicon.ico?v=1607240527791">
 <link rel="stylesheet" href="https://664235822.github.io/styles/main.css">
 
 
@@ -18,14 +18,21 @@
 
 
 
-    <meta name="description" content="安装JDK
-sudo apt-get install default-jdk
-配置环境变量
+    <meta name="description" content="
 
-sudo vim /etc/environment
-粘贴
+安装Tomcat9
+sudo apt-get install tomcat9
 
-JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjd..." />
+
+Tomcat9二进制文件目录
+/usr/share/tomcat9
+
+
+Tomcat9资源文件目录
+/var/lib/tomcat9
+
+
+..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -35,7 +42,7 @@ JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjd..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://664235822.github.io">
-        <img src="https://664235822.github.io/images/avatar.png?v=1607239544951" class="site-logo">
+        <img src="https://664235822.github.io/images/avatar.png?v=1607240527791" class="site-logo">
         <h1 class="site-title">SmallPig的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -101,29 +108,11 @@ JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjd..." />
             <div class="post-date">2020-12-06</div>
             
             <div class="post-content" v-pre>
-              <h3 id="安装jdk">安装JDK</h3>
-<p><code>sudo apt-get install default-jdk</code></p>
-<h3 id="配置环境变量">配置环境变量</h3>
-<ul>
-<li><code>sudo vim /etc/environment</code><br>
-粘贴</li>
-</ul>
-<pre><code>JAVA_HOME=&quot;/usr/lib/jvm/java-11-openjdk-amd64&quot;
-</code></pre>
-<ul>
-<li><code>sudo vim ~/.bashrc</code><br>
-粘贴</li>
-</ul>
-<pre><code>export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export PATH=$JAVA_HOME/bin:$PATH
-</code></pre>
-<ul>
-<li><code>source ~/.bashrc</code></li>
-</ul>
-<h3 id="安装tomcat9">安装Tomcat9</h3>
-<p><code>sudo apt-get install tomcat9</code></p>
-<h3 id="已完成">已完成</h3>
-<ul>
+              <ul>
+<li>
+<p>安装Tomcat9<br>
+<code>sudo apt-get install tomcat9</code></p>
+</li>
 <li>
 <p>Tomcat9二进制文件目录<br>
 <code>/usr/share/tomcat9</code></p>
