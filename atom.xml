@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com</id>
-    <title>Gridea</title>
-    <updated>2020-12-06T06:16:38.671Z</updated>
+    <title>SmallPig的博客</title>
+    <updated>2020-12-06T06:20:35.346Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com"/>
     <link rel="self" href="https://github.com/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>使用Github Pages搭建的个人博客</subtitle>
     <logo>https://github.com/images/avatar.png</logo>
     <icon>https://github.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, SmallPig的博客</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://github.com/post/hello-gridea/</id>
