@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com</id>
+    <id>https://664235822.github.io</id>
     <title>SmallPig的个人博客</title>
-    <updated>2020-12-06T07:24:28.310Z</updated>
+    <updated>2020-12-06T07:25:46.599Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com"/>
-    <link rel="self" href="https://github.com/atom.xml"/>
+    <link rel="alternate" href="https://664235822.github.io"/>
+    <link rel="self" href="https://664235822.github.io/atom.xml"/>
     <subtitle>使用Github Pages搭建的个人博客</subtitle>
-    <logo>https://github.com/images/avatar.png</logo>
-    <icon>https://github.com/favicon.ico</icon>
+    <logo>https://664235822.github.io/images/avatar.png</logo>
+    <icon>https://664235822.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, SmallPig的个人博客</rights>
     <entry>
         <title type="html"><![CDATA[Ubuntu20.04安装Tomcat9]]></title>
-        <id>https://github.com/post/ubuntu2004-an-zhuang-tomcat9/</id>
-        <link href="https://github.com/post/ubuntu2004-an-zhuang-tomcat9/">
+        <id>https://664235822.github.io/post/ubuntu2004-an-zhuang-tomcat9/</id>
+        <link href="https://664235822.github.io/post/ubuntu2004-an-zhuang-tomcat9/">
         </link>
         <updated>2020-12-06T06:49:15.000Z</updated>
         <content type="html"><![CDATA[<h3 id="安装jdk">安装JDK</h3>
@@ -52,8 +52,8 @@ export PATH=$JAVA_HOME/bin:$PATH
     </entry>
     <entry>
         <title type="html"><![CDATA[Ubuntu20.04安装MySQL8.0]]></title>
-        <id>https://github.com/post/ubuntu2004-an-zhuang-mysql80/</id>
-        <link href="https://github.com/post/ubuntu2004-an-zhuang-mysql80/">
+        <id>https://664235822.github.io/post/ubuntu2004-an-zhuang-mysql80/</id>
+        <link href="https://664235822.github.io/post/ubuntu2004-an-zhuang-mysql80/">
         </link>
         <updated>2020-12-06T06:26:06.000Z</updated>
         <content type="html"><![CDATA[<h3 id="安装mysql80">安装MySQL8.0</h3>
@@ -121,8 +121,8 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我�
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://github.com/post/hello-gridea/</id>
-        <link href="https://github.com/post/hello-gridea/">
+        <id>https://664235822.github.io/post/hello-gridea/</id>
+        <link href="https://664235822.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
