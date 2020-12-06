@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://664235822.github.io</id>
     <title>SmallPig的个人博客</title>
-    <updated>2020-12-06T07:42:14.195Z</updated>
+    <updated>2020-12-06T07:49:56.889Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://664235822.github.io"/>
     <link rel="self" href="https://664235822.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://664235822.github.io/images/avatar.png</logo>
     <icon>https://664235822.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, SmallPig的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[git-lfs上传大于100m的大文件]]></title>
+        <id>https://664235822.github.io/post/git-lfs-shang-chuan-da-yu-100m-de-da-wen-jian/</id>
+        <link href="https://664235822.github.io/post/git-lfs-shang-chuan-da-yu-100m-de-da-wen-jian/">
+        </link>
+        <updated>2020-12-06T07:44:54.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>在项目目录git lfs install</p>
+</li>
+<li>
+<p>git lfs track '.文件后缀'</p>
+</li>
+<li>
+<p>git add .gitattributes</p>
+</li>
+<li>
+<p>git commit -m &quot;提交描述“</p>
+</li>
+<li>
+<p>git push</p>
+</li>
+<li>
+<p>配置完成后就可按照平时git方式使用</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ubuntu20.04安装Tomcat9]]></title>
         <id>https://664235822.github.io/post/ubuntu2004-an-zhuang-tomcat9/</id>

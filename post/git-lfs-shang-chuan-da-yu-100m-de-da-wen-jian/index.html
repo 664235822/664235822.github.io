@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Ubuntu20.04安装MySQL8.0 | SmallPig的个人博客</title>
+<title>git-lfs上传大于100m的大文件 | SmallPig的个人博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,11 +18,24 @@
 
 
 
-    <meta name="description" content="安装MySQL8.0
-sudo apt-get install mysql-server
-执行安装脚本
-sudo mysql_secure_installation
-VALIDATE PASSWORD PLUGIN can be used ..." />
+    <meta name="description" content="
+
+在项目目录git lfs install
+
+
+git lfs track '.文件后缀'
+
+
+git add .gitattributes
+
+
+git commit -m &quot;提交描述“
+
+
+git push
+
+
+配置完成后就可..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -94,81 +107,39 @@ VALIDATE PASSWORD PLUGIN can be used ..." />
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Ubuntu20.04安装MySQL8.0</h2>
+            <h2 class="post-title">git-lfs上传大于100m的大文件</h2>
             <div class="post-date">2020-12-06</div>
             
             <div class="post-content" v-pre>
-              <h3 id="安装mysql80">安装MySQL8.0</h3>
-<p><code>sudo apt-get install mysql-server</code></p>
-<h3 id="执行安装脚本">执行安装脚本</h3>
-<p><code>sudo mysql_secure_installation</code></p>
-<pre><code>VALIDATE PASSWORD PLUGIN can be used to test passwords...
-Press y|Y for Yes, any other key for No: N (我的选项)
-
-Please set the password for root here...
-New password: (输入密码)
-Re-enter new password: (重复输入)
-
-By default, a MySQL installation has an anonymous user,
-allowing anyone to log into MySQL without having to have
-a user account created for them...
-Remove anonymous users? (Press y|Y for Yes, any other key for No) : Y (我的选项)
-
-Normally, root should only be allowed to connect from
-'localhost'. This ensures that someone cannot guess at
-the root password from the network...
-Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N (我的选项)
-
-By default, MySQL comes with a database named 'test' that
-anyone can access...
-Remove test database and access to it? (Press y|Y for Yes, any other key for No) : Y(我的选项)
-
-Reloading the privilege tables will ensure that all changes
-made so far will take effect immediately.
-Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (我的选项)
-</code></pre>
-<h3 id="配置远程访问">配置远程访问</h3>
-<p><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></p>
-<p>注释掉</p>
-<ul>
-<li><code>bind-address = 127.0.0.1</code></li>
-<li><code>imysqlx-bind-address = 127.0.0.1</code></li>
-</ul>
-<h3 id="配置远程账户">配置远程账户</h3>
-<p><code>sudo mysql -uroot -p</code></p>
-<ul>
+              <ul>
 <li>
-<p>应先创建新用户<br>
-<code>create user 'root'@'%' identified by '密码';</code></p>
+<p>在项目目录git lfs install</p>
 </li>
 <li>
-<p>执行授权<br>
-<code>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';</code></p>
+<p>git lfs track '.文件后缀'</p>
 </li>
 <li>
-<p>刷新<br>
-<code>flush privileges;</code></p>
+<p>git add .gitattributes</p>
 </li>
 <li>
-<p>授权远程<br>
-<code>ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '密码';</code></p>
+<p>git commit -m &quot;提交描述“</p>
 </li>
 <li>
-<p>刷新<br>
-<code>flush privileges;</code></p>
+<p>git push</p>
+</li>
+<li>
+<p>配置完成后就可按照平时git方式使用</p>
 </li>
 </ul>
-<h3 id="重启mysql服务">重启mysql服务</h3>
-<p><code>sudo systemctl restart mysql</code></p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://664235822.github.io/post/hello-gridea/">
+                <a href="https://664235822.github.io/post/ubuntu2004-an-zhuang-tomcat9/">
                   <h3 class="post-title">
-                    Hello Gridea
+                    Ubuntu20.04安装Tomcat9
                   </h3>
                 </a>
               </div>
