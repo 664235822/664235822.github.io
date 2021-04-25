@@ -2,14 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://664235822.github.io</id>
     <title>SmallPig的个人博客</title>
-    <updated>2020-12-06T07:57:31.612Z</updated>
+    <updated>2021-04-25T14:46:06.940Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://664235822.github.io"/>
     <link rel="self" href="https://664235822.github.io/atom.xml"/>
     <subtitle>使用Github Pages搭建的个人博客</subtitle>
     <logo>https://664235822.github.io/images/avatar.png</logo>
     <icon>https://664235822.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, SmallPig的个人博客</rights>
+    <rights>All rights reserved 2021, SmallPig的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[git配置代理]]></title>
+        <id>https://664235822.github.io/post/git-pei-zhi-dai-li/</id>
+        <link href="https://664235822.github.io/post/git-pei-zhi-dai-li/">
+        </link>
+        <updated>2021-04-25T14:41:07.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>设置socks代理</li>
+</ul>
+<pre><code>git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+</code></pre>
+<ul>
+<li>设置https代理</li>
+</ul>
+<pre><code>git config --global https.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+</code></pre>
+<ul>
+<li>取消代理</li>
+</ul>
+<pre><code>git config --global --unset http.proxy
+git config --global --unset https.proxy
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[git-lfs上传大于100m的大文件]]></title>
         <id>https://664235822.github.io/post/git-lfs-shang-chuan-da-yu-100m-de-da-wen-jian/</id>

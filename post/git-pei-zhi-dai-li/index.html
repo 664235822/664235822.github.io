@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea | SmallPig的个人博客</title>
+<title>git配置代理 | SmallPig的个人博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,12 @@
 
 
 
-    <meta name="description" content="使用Github Pages搭建的个人博客">
+    <meta name="description" content="
+设置socks代理
+
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,35 +93,46 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Gridea</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://664235822.github.io/post/hello-gridea/">
-                  <h2 class="post-title">Hello Gridea</h2>
-                </a>
-                <div class="post-date">
-                  2018-12-12
-                </div>
-                <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+          <div class="post-detail">
+            <h2 class="post-title">git配置代理</h2>
+            <div class="post-date">2021-04-25</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
+<li>设置socks代理</li>
+</ul>
+<pre><code>git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+</code></pre>
+<ul>
+<li>设置https代理</li>
+</ul>
+<pre><code>git config --global https.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+</code></pre>
+<ul>
+<li>取消代理</li>
+</ul>
+<pre><code>git config --global --unset http.proxy
+git config --global --unset https.proxy
+</code></pre>
 
-                </div>
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://664235822.github.io/post/git-lfs-shang-chuan-da-yu-100m-de-da-wen-jian/">
+                  <h3 class="post-title">
+                    git-lfs上传大于100m的大文件
+                  </h3>
+                </a>
               </div>
-              
-                <a class="right" href="https://664235822.github.io/post/hello-gridea/">
-                  <div class="feature-container" style="background-image: url('https://664235822.github.io/post-images/hello-gridea.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+
+          </div>
 
         </div>
       </div>
