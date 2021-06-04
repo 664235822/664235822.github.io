@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://664235822.github.io</id>
     <title>SmallPig的个人博客</title>
-    <updated>2021-04-25T14:47:26.537Z</updated>
+    <updated>2021-06-04T08:24:36.955Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://664235822.github.io"/>
     <link rel="self" href="https://664235822.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://664235822.github.io/images/avatar.png</logo>
     <icon>https://664235822.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, SmallPig的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Windows系统添加ssh-add]]></title>
+        <id>https://664235822.github.io/post/windows-xi-tong-tian-jia-ssh-add/</id>
+        <link href="https://664235822.github.io/post/windows-xi-tong-tian-jia-ssh-add/">
+        </link>
+        <updated>2021-06-04T08:19:49.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="在git-bash命令行输入">在git bash命令行输入</h3>
+<p><code>exec ssh-agent bash</code><br>
+<code>eval ssh-agent -s</code><br>
+<code>ssh-add &quot;路径&quot;</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[git配置代理]]></title>
         <id>https://664235822.github.io/post/git-pei-zhi-dai-li/</id>
