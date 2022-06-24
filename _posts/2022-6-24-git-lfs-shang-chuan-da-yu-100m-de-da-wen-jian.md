@@ -1,11 +1,6 @@
 ---
-title: 'git-lfs上传大于100m的大文件'
-date: 2022-04-24 20:23:24
-tags: []
-published: true
-hideInList: false
-feature: 
-isTop: false
+layout: post
+title: git-lfs上传大于100m的大文件
 ---
 * ```在项目目录git lfs install```
 * ```git lfs track '.文件后缀'```

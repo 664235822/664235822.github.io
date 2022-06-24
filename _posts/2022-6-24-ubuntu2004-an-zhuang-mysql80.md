@@ -1,11 +1,6 @@
 ---
-title: 'Ubuntu20.04安装MySQL8.0'
-date: 2022-04-24 20:22:39
-tags: []
-published: true
-hideInList: false
-feature: 
-isTop: false
+layout: post
+title: Ubuntu20.04安装MySQL8.0
 ---
 ### 安装MySQL8.0
 ```sudo apt-get install mysql-server```

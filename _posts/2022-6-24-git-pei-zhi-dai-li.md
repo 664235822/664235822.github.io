@@ -1,11 +1,6 @@
 ---
-title: 'git配置代理'
-date: 2022-04-24 20:23:43
-tags: []
-published: true
-hideInList: false
-feature: 
-isTop: false
+layout: post
+title: git配置代理
 ---
 * 设置socks代理
 ```

@@ -1,11 +1,6 @@
 ---
-title: 'Ubuntu20.04安装Tomcat9'
-date: 2022-04-24 20:23:06
-tags: []
-published: true
-hideInList: false
-feature: 
-isTop: false
+layout: post
+title: Ubuntu20.04安装Tomcat9
 ---
 * 安装Tomcat9
 ```sudo apt-get install tomcat9```
