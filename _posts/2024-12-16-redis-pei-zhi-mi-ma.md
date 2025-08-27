@@ -12,7 +12,7 @@ requirepass password
 然后，先启动```redis-server.exe```，再启动```redis-cli.exe```，输入
 
 ```
-config set reqiurepass "password"
+config set requirepass "password"
 AUTH password
 ```
 
