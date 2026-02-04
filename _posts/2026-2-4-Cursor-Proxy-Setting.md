@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Cursor-Proxy-Setting
+title: Cursor 代理配置
 ---
-# Cursor-Proxy-Setting
+# Cursor 代理配置
 
 ```
 {
