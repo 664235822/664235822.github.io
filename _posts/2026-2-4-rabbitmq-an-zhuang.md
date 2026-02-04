@@ -35,11 +35,7 @@ rabbitmq-plugins enable rabbitmq_management
 
 ```
 rabbitmqctl add_user myuser password
-```
-```
 rabbitmqctl set_permissions -p / myuser ".*" ".*" ".*"
-```
-```
 rabbitmqctl set_user_tags myuser administrator
 ```
 
