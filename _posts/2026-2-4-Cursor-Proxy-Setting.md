@@ -2,8 +2,6 @@
 layout: post
 title: Cursor 代理配置
 ---
-# Cursor 代理配置
-
 ```
 {
   "http.proxy": "http://127.0.0.1:10808",

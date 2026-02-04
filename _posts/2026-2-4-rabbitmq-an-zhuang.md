@@ -2,8 +2,6 @@
 layout: post
 title: RabbitMQ 安装
 ---
-# RabbitMQ 安装
-
 ### 添加环境变量
 
 ```C:\Program Files\RabbitMQ Server\rabbitmq_server-4.2.1\sbin```
